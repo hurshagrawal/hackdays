@@ -1,0 +1,8 @@
+{
+	"name": "hackdays",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "2.4.0",
+		"ejs": "1.4.3"
+	}
+}
