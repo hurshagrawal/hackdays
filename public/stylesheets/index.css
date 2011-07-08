@@ -1,0 +1,144 @@
+#main
+{
+	position: relative;
+}
+
+#philosophy
+{
+	position: relative;
+	margin-left: 70px;
+	width: 500px;
+	font-family: Cantarell;
+	font-size: 35px;
+}
+
+#philosophy ul
+{
+	position: relative;
+	top: -15px;
+	font-size: 25px;
+}
+
+#nextmeeting
+{
+
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	text-align: center;
+	font-family: Aller;
+	font-size: 20px;
+}
+
+#nextmeeting p
+{
+	font-size: 40px;
+	margin: 0px;
+}
+#nextmeeting p a:link, #nextmeeting p a:visited 
+{
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+#nextmeeting p a:hover
+{
+	color: grey;
+	border-bottom: 2px solid grey;
+}
+
+#listserve {
+	margin: 10px;
+	width: 400px;
+}
+
+#title
+{
+	text-align: center;
+	margin-top: 40px;
+	font-family: Aller;
+	font-size: 60px;
+}
+
+#title b
+{
+	color: darkred;
+}
+
+#description
+{
+	font-size: 25px;
+}
+
+#procons
+{
+	position: relative;
+	top: 20px;
+	margin: 30px;
+	text-align: center;
+	font-family: Aller;
+	font-size: 35px;
+}
+
+#pros
+{
+	left: 50px;
+	position: absolute;
+	width: 500px;
+}
+
+#cons
+{
+	right: 170px;
+	position: absolute;
+	width: 300px;
+}
+
+#procons ul
+{
+	text-align: left;
+	top: -15px;
+	position: relative;
+	font-size: 25px;
+}
+
+#comments
+{
+	position: relative;
+	width: 1000px;
+	top: 380px;
+	left: 70px;
+	font-family: Aller;
+	font-size: 25px;
+}
+
+#comments ul
+{
+	position: relative;
+	list-style: none;
+	width: 1000px;
+	top: -20px;
+	left: 12px;
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('/fonts/aller-webfont.eot');
+    src: url('/fonts/aller-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/aller-webfont.woff') format('woff'),
+         url('/fonts/aller-webfont.ttf') format('truetype'),
+         url('/fonts/aller-webfont.svg#AllerLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cantarell';
+    src: url('/fonts/cantarell-webfont.eot');
+    src: url('/fonts/cantarell-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/cantarell-webfont.woff') format('woff'),
+         url('/fonts/cantarell-webfont.ttf') format('truetype'),
+         url('/fonts/cantarell-webfont.svg#CantarellRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -29,7 +29,10 @@ app.configure('production', function(){
 
 // Routes
 app.get('/', function(req, res){
-  res.render('index.ejs');
+  res.render('index', {
+		stylesheet: 'index',
+		nextMeeting: "Saturday, 7/9 at 2pm"
+	});
 });
 
 var port = process.env.PORT || 3000;

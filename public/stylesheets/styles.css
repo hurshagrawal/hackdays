@@ -1,18 +1,75 @@
-body {
-	font-family: Helvetica, Arial, Sans-Serif;
-	font-size: 16px;
-	text-align: center;
+body 
+{
+	background-color: white;
+	background-image:url('/images/bggray2.png');
 }
-#header	{
+
+#container 
+{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+#header 
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 20px;
+	position: relative;
 }
-#logo {
-	font-size: 45px;
-	padding: 5px;
+
+#logo
+{
+	width: 500px;
 }
-#top {
-	
+#navigation 
+{
+	position: absolute;
+	top: 25px;
+	right: 75px;
+	font-family: Quicksand;
 }
-#time {
-	font-size: 55px;
+
+#list ul, #list li
+{
+	display: inline;
+	list-style-type: none;
+	font-size: 35px;
+}
+
+#list a:link, #list a:visited, #list a:hover
+{
+	position: relative;
+	top: -5px;
+	font-size: 18px;
+	line-height: 14px;
+	margin: 0 12px 4px 12px;
+	text-decoration: none;
+	color: black;
+}
+
+#tech {
+	position: relative;
+	top: 11px;
+	left: 4px;
+}
+
+#list a:hover
+{
+	border-bottom: 2px solid black;
+	padding-bottom: 7px;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/fonts/quicksand-webfont.eot');
+    src: url('/fonts/quicksand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/quicksand-webfont.woff') format('woff'),
+         url('/fonts/quicksand-webfont.ttf') format('truetype'),
+         url('/fonts/quicksand-webfont.svg#QuicksandBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }

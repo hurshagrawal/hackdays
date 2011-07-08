@@ -1,9 +1,22 @@
 !!! 5
-	html(lang='en')
-		head
-			title= NYU Hackdays
-		body
-			#container
-				#header
-				#main!= body
-					
+html(lang='en')
+head
+	link(rel='stylesheet', href='/stylesheets/styles.css', type='text/css')
+	- if (typeof(stylesheet) != 'undefined')
+		!= "<link rel='stylesheet' type='text/css' href='/stylesheets/"+stylesheet+ ".css' />"
+	title NYU Hackdays
+body
+	#container
+		#header
+			#logo
+				img(src='/images/hackdays.png')
+			#navigation
+				ul#list
+					li: a(href="http://cs.nyu.edu/mailman/listinfo/hackdays") LISTSERVE
+					li |
+					li: a(href="mailto:h@hurshagrawal") CONTACT
+					li |
+					li
+						a(href="http://www.techatnyu.com")
+							img#tech(src='/images/techatnyu.png')
+		#main!= body
