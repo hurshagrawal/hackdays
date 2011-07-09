@@ -5,7 +5,17 @@ head
 	- if (typeof(stylesheet) != 'undefined')
 		!= "<link rel='stylesheet' type='text/css' href='/stylesheets/"+stylesheet+ ".css' />"
 	title NYU Hackdays
+	script(src='/scripts/jquery/js/jquery-1.6.2.min.js')
+	script(src='/scripts/jquery/js/jquery-ui-1.8.14.custom.min.js')
+	- $.ready(function() {
+		
+		})
 body
+	#dialog
+		form(id='')
+			input(type='text', name='email')
+			input(type='text', name='message')
+			button()
 	#container
 		#header
 			#logo
