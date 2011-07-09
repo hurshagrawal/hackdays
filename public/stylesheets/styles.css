@@ -57,6 +57,10 @@ body
 	left: 4px;
 }
 
+#contact_dialog, #sender_thingy {
+	display: none;
+}
+
 #list a:hover
 {
 	border-bottom: 2px solid black;
