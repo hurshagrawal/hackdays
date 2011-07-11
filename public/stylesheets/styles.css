@@ -57,7 +57,7 @@ body
 	left: 4px;
 }
 
-#contact_dialog, #sender_thingy {
+#contact_dialog {
 	display: none;
 }
 
@@ -81,11 +81,19 @@ body
 
 #contact_form textarea {
 	width: 100%;
+	max-width: 100%;
 	height: 200px;
+	max-height: 200px;
 	display: block;
 }
 #contact_form label {
 	font-size: 10pt;
+}
+
+#contact_status {
+	display: none;
+	text-align: center;
+	margin: 40px 0;
 }
 
 #list a:hover

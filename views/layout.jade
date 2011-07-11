@@ -7,50 +7,24 @@ head
 		!= "<link rel='stylesheet' type='text/css' href='/stylesheets/"+stylesheet+ ".css' />"
 	title NYU Hackdays
 	script(src='/scripts/jquery/js/jquery-1.6.2.min.js')
+	script(src='/scripts/jquery/js/jquery.validate.min.js')
 	script(src='/scripts/jquery/js/jquery-ui-1.8.14.custom.min.js')
+	script(src='/scripts/contact-form.js')
 	script
 		$(document).ready(function() {
-			$('#contact_dialog').dialog({
-				title: "Send a message to the Hursh!",
-				autoOpen: false,
-				modal: true,
-				height: 400,
-				width: 400,
-				resizable: false,
-				show: 'fade',
-				hide: 'fade',
-			});
-			$('#contact_form').submit(function() {
-				$('#contact_form').fadeOut(200);
-				$('#sender_thingy').html('Sending...');
-				setTimeout("$('#sender_thingy').fadeIn(200);", 220);
-				/*
-				$.ajax({
-					url: $(this).attr('action'),
-					type: json,
-					success: function() {
-						$('#sender_thingy').html('Thanks! Your message has been sent!');
-						$('#contact_dialog').dialog('close');
-					},
-					error: function() {
-						$('#sender_thingy').html('Oh snap! Something broke, yo.');
-					},
-				});
-				*/
-				return false;
-			});
+			ContactFormJiggyWut();
 		});
 
 body
 	#contact_dialog
-		form#contact_form(method='post', action='/mailer.js')
+		form#contact_form(method='post', action='/mailer')
 			label(for="email") Your E-mail Address:
-			input(type='text', name='email')
+			input(type='text', id='email', name='email', class='required email')
 			label(for="message") Message:
-			textarea(name='message')
+			textarea(id='message', name='message', class='required')
 			div#send_button
 				button(type='submit') Send
-		#sender_thingy
+		#contact_status
 			
 	#container
 		#header
