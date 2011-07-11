@@ -2,45 +2,54 @@
 html(lang='en')
 head
 	link(rel='stylesheet', href='/stylesheets/styles.css', type='text/css')
+	link(rel='stylesheet', href='/scripts/jquery/css/smoothness/jquery-ui-1.8.14.custom.css', type='text/css')
 	- if (typeof(stylesheet) != 'undefined')
 		!= "<link rel='stylesheet' type='text/css' href='/stylesheets/"+stylesheet+ ".css' />"
 	title NYU Hackdays
 	script(src='/scripts/jquery/js/jquery-1.6.2.min.js')
 	script(src='/scripts/jquery/js/jquery-ui-1.8.14.custom.min.js')
-	- $.ready(function() {
-		$('contact_dialog').dialog({
-			autoOpen: false,
-			modal: true,
-			height: 'auto',
-			width: 'auto',
-			resizable: false,
-			show: 'slide',
-			hide: 'slide',
-		});
-		$('#contact_form').submit({
-			$('#contact_form').fadeOut(200);
-			$('#sender_thingy').html('Sending...');
-			setTimeout("$('#sender_thingy').fadeIn(200);", 220);
-			$.ajax({
-				url: $(this).attr('action'),
-				type: json,
-				success: function() {
-					$('#sender_thingy').html('Thanks! Your message has been sent!');
-					$('#contact_dialog').dialog('close');
-				},
-				error: function() {
-					$('#sender_thingy').html('Oh snap! Something broke, yo.');
-				},
+	script
+		$(document).ready(function() {
+			$('#contact_dialog').dialog({
+				title: "Send a message to the Hursh!",
+				autoOpen: false,
+				modal: true,
+				height: 400,
+				width: 400,
+				resizable: false,
+				show: 'fade',
+				hide: 'fade',
 			});
-			return false;
+			$('#contact_form').submit(function() {
+				$('#contact_form').fadeOut(200);
+				$('#sender_thingy').html('Sending...');
+				setTimeout("$('#sender_thingy').fadeIn(200);", 220);
+				/*
+				$.ajax({
+					url: $(this).attr('action'),
+					type: json,
+					success: function() {
+						$('#sender_thingy').html('Thanks! Your message has been sent!');
+						$('#contact_dialog').dialog('close');
+					},
+					error: function() {
+						$('#sender_thingy').html('Oh snap! Something broke, yo.');
+					},
+				});
+				*/
+				return false;
+			});
 		});
-	});
+
 body
 	#contact_dialog
 		form#contact_form(method='post', action='/mailer.js')
+			label(for="email") Your E-mail Address:
 			input(type='text', name='email')
-			input(type='text', name='message')
-			input(type='submit', value='Send')
+			label(for="message") Message:
+			textarea(name='message')
+			div#send_button
+				button(type='submit') Send
 		#sender_thingy
 			
 	#container
@@ -51,7 +60,7 @@ body
 				ul#list
 					li: a(href="http://cs.nyu.edu/mailman/listinfo/hackdays") LISTSERVE
 					li |
-					li: a(onclick="$(this).dialog('show');") CONTACT
+					li: a(href="#", onclick="$('#contact_dialog').dialog('open');") CONTACT
 					li |
 					li
 						a(href="http://www.techatnyu.com")
