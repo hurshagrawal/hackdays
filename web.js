@@ -31,7 +31,7 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Saturday, 7/9 at 2pm"
+		nextMeeting: "Saturday, 7/16 at 2pm"
 	});
 });
 
