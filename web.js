@@ -32,7 +32,7 @@ app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
 		nextMeeting: "Saturday, 7/30 at 2pm",
-		nextTopic: "Hyperpublic's API and an Intro to Rails"
+		nextTopic: "Hyperpublic's API and an intro to Rails"
 	});
 });
 app.post('/mailer', function(req, res){
