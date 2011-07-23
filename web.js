@@ -31,8 +31,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Saturday, 7/23 at 2pm",
-		nextTopic: "MongoDB and no-SQL databases"
+		nextMeeting: "Saturday, 7/30 at 2pm",
+		nextTopic: "Hyperpublic's API and an Intro to Rails"
 	});
 });
 app.post('/mailer', function(req, res){
