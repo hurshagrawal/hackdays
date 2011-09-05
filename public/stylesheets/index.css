@@ -1,128 +1,128 @@
 #main
 {
-	position: relative;
+    position: relative;
 }
 
 #philosophy
 {
-	position: relative;
-	margin-left: 20px;
-	width: 400px;
-	font-family: Cantarell;
-	font-size: 30px;
+    position: relative;
+    margin-left: 20px;
+    width: 400px;
+    font-family: Cantarell;
+    font-size: 30px;
 }
 
 #philosophy ul
 {
-	position: relative;
-	top: -15px;
-	font-size: 20px;
+    position: relative;
+    top: -15px;
+    font-size: 20px;
 }
 
 #nextmeeting
 {
-	width: 500px;
-	position: absolute;
-	top: -20px;
-	right: 10px;
-	text-align: center;
-	font-family: Aller;
-	font-size: 20px;
+    width: 500px;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    text-align: center;
+    font-family: Aller;
+    font-size: 20px;
 }
 
 #nextmeeting p
 {
-	font-size: 28px;
-	margin: 0px;
+    font-size: 24px;
+    margin: 0px;
 }
 #nextmeeting p a:link, #nextmeeting p a:visited 
 {
-	text-decoration: none;
-	color: black;
-	border-bottom: 2px solid black;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
 }
 
 #nextmeeting p a:hover
 {
-	color: grey;
-	border-bottom: 2px solid grey;
+    color: grey;
+    border-bottom: 2px solid grey;
 }
 
 #listserve {
-	font-weight: bold;
-	position: relative;
-	right: -50px;
-	margin: 10px;
-	width: 400px;
+    font-weight: bold;
+    position: relative;
+    right: -50px;
+    margin: 10px;
+    width: 400px;
 }
 
 #title
 {
-	text-align: center;
-	margin-top: 70px;
-	font-family: Aller;
-	font-size: 52px;
+    text-align: center;
+    margin-top: 70px;
+    font-family: Aller;
+    font-size: 52px;
 }
 
 #title b
 {
-	color: darkred;
+    color: darkred;
 }
 
 #description
 {
-	font-size: 25px;
+    font-size: 25px;
 }
 
 #procons
 {
-	position: relative;
-	top: 20px;
-	margin: 20px;
-	text-align: center;
-	font-family: Aller;
-	font-size: 35px;
+    position: relative;
+    top: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Aller;
+    font-size: 35px;
 }
 
 #pros
 {
-	left: 0px;
-	position: absolute;
-	width: 500px;
+    left: 0px;
+    position: absolute;
+    width: 500px;
 }
 
 #cons
 {
-	right: 60px;
-	position: absolute;
-	width: 300px;
+    right: 60px;
+    position: absolute;
+    width: 300px;
 }
 
 #procons ul
 {
-	text-align: left;
-	top: -15px;
-	position: relative;
-	font-size: 25px;
+    text-align: left;
+    top: -15px;
+    position: relative;
+    font-size: 25px;
 }
 
 #comments
 {
-	position: relative;
-	width: 1000px;
-	top: 380px;
-	left: 20px;
-	font-family: Aller;
-	font-size: 25px;
+    position: relative;
+    width: 1000px;
+    top: 380px;
+    left: 20px;
+    font-family: Aller;
+    font-size: 25px;
 }
 
 #comments ul
 {
-	position: relative;
-	list-style: none;
-	width: 1000px;
-	top: -20px;
-	left: 12px;
+    position: relative;
+    list-style: none;
+    width: 1000px;
+    top: -20px;
+    left: 12px;
 }
 
 @font-face {
