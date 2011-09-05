@@ -31,8 +31,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Saturday, Sept. 10th at 2pm",
-		nextTopic: "TBA!"
+		nextMeeting: "Saturday, Sept. 9th at 2pm",
+		nextTopic: "Amazon AWS and setting up your own web server"
 	});
 });
 app.post('/mailer', function(req, res){
