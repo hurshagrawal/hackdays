@@ -31,8 +31,9 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Friday, Sept. 9th at 4:30pm",
-		nextTopic: "Processing and Data Visualization!!"
+		nextMeeting: "Friday, Sept. 16th at 4pm",
+		nextTopic: "Unity and Videogame Design",
+    nextLocation: "Courant - Room number TBA"
 	});
 });
 app.post('/mailer', function(req, res){
