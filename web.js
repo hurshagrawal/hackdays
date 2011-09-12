@@ -33,7 +33,7 @@ app.get('/', function(req, res){
 		stylesheet: 'index',
 		nextMeeting: "Friday, Sept. 16th at 4pm",
 		nextTopic: "Unity and Videogame Design",
-    nextLocation: "Courant - Room number TBA"
+    nextLocation: "Courant - Room 201"
 	});
 });
 app.post('/mailer', function(req, res){
