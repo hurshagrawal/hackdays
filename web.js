@@ -31,8 +31,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Friday, Sept. 23rd at 4pm",
-		nextTopic: "Basic Web Development + Serverside Javascript with Node.JS",
+		nextMeeting: "Friday, Sept. 30th at 3pm",
+		nextTopic: "Basic Javascript and General Hackathon Tips",
     nextLocation: "Courant - Room 201"
 	});
 });
