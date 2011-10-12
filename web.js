@@ -31,8 +31,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Friday, Sept. 30th at 3pm",
-		nextTopic: "Basic Javascript and General Hackathon Tips",
+		nextMeeting: "Friday, October 14th at 3pm",
+		nextTopic: "Getting Started with APIs and JSON (5pm)",
     nextLocation: "Courant - Room 201"
 	});
 });
