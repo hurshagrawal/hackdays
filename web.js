@@ -31,8 +31,8 @@ app.configure('production', function(){
 app.get('/', function(req, res){
   res.render('index', {
 		stylesheet: 'index',
-		nextMeeting: "Friday, October 14th at 3pm",
-		nextTopic: "Getting Started with APIs and JSON (5pm)",
+		nextMeeting: "Friday, October 21st at 3pm",
+		nextTopic: "Getting comfortable with Terminal and Bash (5pm)",
     nextLocation: "Courant - Room 201"
 	});
 });
